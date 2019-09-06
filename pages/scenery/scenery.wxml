@@ -1,0 +1,15 @@
+<!--pages/scenery/scenery.wxml-->
+<view class="container">
+  <view class="top"><image src="/img/scenery/icon_top.png"></image></view>
+  <view class="main">
+    <navigator url="../scenery/detail?={{item.id}}" wx:for="{{list}}">
+      <view class="title" style="background-image:url('/img/scenery/icon_left.png')"><text># </text>{{item.name}}<text> #</text></view>
+      <view class="imgs"><image src="{{item.url}}"></image></view>
+    </navigator>
+  </view>
+
+
+
+  <import src="../template/template.wxml"/>
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+</view>

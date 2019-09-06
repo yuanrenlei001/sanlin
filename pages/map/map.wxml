@@ -1,0 +1,7 @@
+<!-- pages/map/map.wxml
+<map id="map" longitude="120.2701500000" latitude="30.5556300000" scale="18" markers="{{markers}}" bindcontroltap="controltap"  bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 100%; min-height: 1200rpx;"></map> -->
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <web-view src="https://sysw.zhamengtec.com"></web-view>
+  </view>
+</view>

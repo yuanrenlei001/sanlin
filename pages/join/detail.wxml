@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="top"><image src="{{banner[0].url}}"></image></view>
+  <view class="textTop">
+    <image class="sltitle" src="/img/join/sltitle.png"></image>
+    <image class="slFly" src="/img/join/icon_sl_01.png"></image>
+    <view class="title">三林村简介</view>
+  </view>
+  <view class="content">
+    <rich-text nodes="{{nodes}}"></rich-text>
+  </view>
+  <image class="bottom" src="/img/join/icon_sl_03.png"></image>
+</view>

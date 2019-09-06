@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="Img"><image src="/img/index/null.png"></image></view>
+  <view class="text01">暂未开放，静待下期~</view>
+  <view class="text02">去其他地方 <my-link bindtap="goIndex">逛逛</my-link> 吧</view>
+</view>

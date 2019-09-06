@@ -1,0 +1,25 @@
+.Img {
+  width:477rpx;
+  height:500rpx;
+  position: relative;
+  margin:130rpx auto 0;
+}
+.Img image {
+  width:477rpx;
+  height:500rpx;
+}
+.text01 {
+  font-size: 30rpx;
+  width:100%;
+  text-align: center;
+  color: #96989b;
+  margin-top: 50rpx;
+}
+.text02 {
+  font-size: 34rpx;
+  width:100%;
+  text-align: center;
+  color: #2b2b2b;
+  margin-top: 40rpx;
+}
+.text02>my-link {color: #209c0f;}

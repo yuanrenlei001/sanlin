@@ -1,0 +1,52 @@
+/* pages/scenery/scenery.wxss */
+.top {
+  width:100%;
+  height:142rpx;
+  text-align: center;
+  line-height: 142rpx;
+}
+.top image {
+    width:284rpx;
+    height:82rpx;
+    vertical-align: middle;
+}
+page {background: #f2f2f2;}
+.main {
+  width:100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+}
+.main navigator {
+  width:100%;
+  height:443rpx;
+  background: #fff;
+  position: relative;
+  border-radius: 20rpx;
+}
+.main navigator .imgs {
+  width:100%;
+  height:332rpx;
+  overflow: hidden;
+  position: absolute;
+  left:0;
+  bottom:0;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  }
+.imgs image {width:100%;heigjt:100%;}
+.title {
+  width:267rpx;
+  height:67rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 267rpx 67rpx;
+  position: absolute;
+  top:28rpx;
+  left:-8rpx;
+
+}
+.title text {font-size: 18rpx;}

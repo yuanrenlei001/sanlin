@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="bg">
+    <image class="bgImg" src="/img/join/bg.jpg"></image>
+    <view class="sort">
+      <navigator url="../join/detail" style="top:0;left:44rpx; animation: left 1s linear ;">
+        <image src="/img/join/sljs.png"></image>
+      </navigator>
+      <navigator url="../join/honor" style="top:0;right:44rpx;animation: right 1s linear ;">
+        <image src="/img/join/ryzs.png"></image>
+      </navigator>
+      <navigator url="../join/news" style="bottom:0;left:44rpx;animation: left 2s linear ;">
+        <image src="/img/join/rczc.png"></image>
+      </navigator>
+      <navigator style="bottom:0;right:44rpx;animation: right 2s linear ;">
+        <image src="/img/join/xxwh.png"></image>
+      </navigator>
+    </view>
+  </view>
+  <import src="../template/template.wxml" />
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

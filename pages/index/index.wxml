@@ -1,0 +1,237 @@
+<!-- index.wxml
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src='/img/user/user.png'></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" lang= "zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+  
+</view> -->
+<view class="container">
+    <!-- <include src="../template/getUserInfo.wxml" /> -->
+    <view class="top">
+      <navigator class="check" url="../null/null">
+        <image src="/img/index/check.png"></image>
+      </navigator>
+      <view class="search">
+        <input placeholder="搜索" disabled/>
+      </view>
+    </view>
+    <!-- 轮播 -->
+    <view class="banner" >
+      <swiper indicator-dots="true" autoplay="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,1)" style="height:345rpx;">
+        <swiper-item wx:for="{{banner}}">
+          <image src="{{item.url}}" class="slide-image" />
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 8大分类 -->
+    <view class="sort">
+      <view class="sortUl">
+        <navigator class="sortDetail" url="../join/join">
+          <image src="/img/index/icon01.png"></image>
+        </navigator>
+        <navigator class="sortDetail">
+          <image src="/img/index/icon02.png"></image>
+        </navigator>
+        <navigator class="sortDetail">
+          <image src="/img/index/icon03.png"></image>
+        </navigator>
+        <navigator class="sortDetail">
+          <image src="/img/index/icon04.png"></image>
+        </navigator>
+        <navigator class="sortDetail">
+          <image src="/img/index/icon05.png"></image>
+        </navigator>
+        <navigator class="sortDetail" url="../scenery/scenery">
+          <image src="/img/index/icon06.png"></image>
+        </navigator>
+        <navigator class="sortDetail" url="../homestay/homestay">
+          <image src="/img/index/icon07.png"></image>
+        </navigator>
+        <navigator class="sortDetail" url="../food/food">
+          <image src="/img/index/icon08.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- 三林动态 -->
+    <view class="news">
+      <view class="newsLeft" bindtap="goTrend">
+        <image src="/img/index/news.png"></image>
+      </view>
+      <view class="newsRight">
+        <navigator url="../trend/detail?id={{new2.id}}">
+          <my-active>活动</my-active> {{new2.title}}</navigator>
+        <navigator url="../trend/detail?id={{new1.id}}">
+          <my-active>公开</my-active> {{new1.title}}</navigator>
+      </view>
+      <view class="hr"></view>
+    </view>
+    <!-- 导航导览 -->
+    <view class="map">
+      <view class="mapTop">
+        <image src="/img/index/title01.png"></image>
+        <navigator>更多
+          <image src="/img/index/right.png"></image>
+        </navigator>
+      </view>
+      <view class="mapSort">
+        <navigator>
+          <view class="navLeft">
+            <view>停车场</view>
+            <view>寻找停车位</view>
+          </view>
+          <image src="/img/index/index01.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>公共厕所</view>
+            <view>寻找厕所</view>
+          </view>
+          <image src="/img/index/index02.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>农家乐</view>
+            <view>寻找餐馆</view>
+          </view>
+          <image src="/img/index/index03.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>游客中心</view>
+            <view>寻找游客中心</view>
+          </view>
+          <image src="/img/index/index04.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- 产学研 -->
+    <view class="map">
+      <view class="mapTop">
+        <image src="/img/index/title02.png" style="width:87rpx;"></image>
+        <navigator>更多
+          <image src="/img/index/right.png"></image>
+        </navigator>
+      </view>
+      <view class="mapSort">
+        <navigator>
+          <view class="navLeft">
+            <view>师资力量</view>
+            <view>师资团队展示</view>
+          </view>
+          <image src="/img/index/index05.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>研学通告</view>
+            <view>通知和报名</view>
+          </view>
+          <image src="/img/index/index06.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>研学展示</view>
+            <view>活动展示</view>
+          </view>
+          <image src="/img/index/index07.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>研学视频</view>
+            <view>教学片</view>
+          </view>
+          <image src="/img/index/index08.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- 周边游 -->
+    <view class="map" style="height:343rpx;">
+      <view class="mapTop">
+        <image src="/img/index/title03.png" style="width:87rpx;"></image>
+        <navigator>更多
+          <image src="/img/index/right.png"></image>
+        </navigator>
+      </view>
+      <view class="mapSort">
+        <navigator class="mapShu">
+          <view class="navLeft">
+            <view>三林全景</view>
+            <view>三林样貌</view>
+          </view>
+          <image src="/img/index/index09.png"></image>
+        </navigator>
+
+        <navigator class="mapShu">
+          <view class="navLeft">
+            <view>论坛</view>
+            <view>交友平台</view>
+          </view>
+          <image src="/img/index/index10.png"></image>
+        </navigator>
+
+        <navigator class="mapShu">
+          <view class="navLeft">
+            <view>三林攻略</view>
+            <view>玩转三林</view>
+          </view>
+          <image src="/img/index/index11.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- 便民服务 -->
+    <view class="map">
+      <view class="mapTop">
+        <image src="/img/index/title04.png"></image>
+        <navigator>更多
+          <image src="/img/index/right.png"></image>
+        </navigator>
+      </view>
+      <view class="mapSort">
+        <navigator>
+          <view class="navLeft">
+            <view>天气预报</view>
+            <view>三林天气</view>
+          </view>
+          <image src="/img/index/index12.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>缴费服务</view>
+            <view>水电气缴费</view>
+          </view>
+          <image src="/img/index/index13.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>便民信息</view>
+            <view>信息公告</view>
+          </view>
+          <image src="/img/index/index14.png"></image>
+        </navigator>
+        <navigator>
+          <view class="navLeft">
+            <view>便民热线</view>
+            <view>热线电话</view>
+          </view>
+          <image src="/img/index/index15.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <!-- <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar> -->
+    <import src="../template/template.wxml" />
+    <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+  </view>

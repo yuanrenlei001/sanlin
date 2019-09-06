@@ -1,0 +1,52 @@
+<!--pages/trend/detail.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="title">{{main.title}}</view>
+    <text style="color:#88a862;margin-right:20rpx;">{{main.publisher}}</text>
+    <text style="color:#a7a7a7;">{{main.entryTime}}</text>
+  </view>
+  <view class="text">
+    <view class="content">
+      <rich-text nodes="{{nodes}}"></rich-text>
+    </view>
+    <view class="bottom">
+      <view class="read">阅读 {{main.pageViews==''?0:main.pageview}}</view>
+      <view class="zan" bindtap="zan" style="background-image:url(/img/zan.png)">{{zan}}</view>
+    </view>
+  </view>
+  <!-- 评论 -->
+  <view class="comment">
+    <view class="commentTop">评论</view>
+    <view class="commentList">
+      <view class="main">
+        <image class="headImg" src="/img/index/banner.png"></image>
+        <view class="infomation">
+          <view class="name">秋之永恒 <text style="background-image:url(/img/zan.png)">2</text></view>
+          <view class="commentText">想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。</view>
+          <view class="time">2019-06-15</view>
+        </view>
+      </view>
+      <view class="main">
+        <image class="headImg" src="/img/index/banner.png"></image>
+        <view class="infomation">
+          <view class="name">秋之永恒 <text style="background-image:url(/img/zan.png)">2</text></view>
+          <view class="commentText">想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。想要党建工作常态化，基层工作要做好。</view>
+          <view class="time">2019-06-15</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 发表评论 -->
+  <view class="fixed">
+    <view class="push">发表评论</view>
+  </view>
+  <!-- 评论窗口 -->
+  <view class="review">
+    <view class="reviewMain">
+      <view class="reviewTop"><text>=</text> 新闻动态评论 <text>=</text></view>
+      <textarea placeholder="请输入您的评论信息"></textarea>
+      <button class="cancel">重置</button>
+      <button class="success">发布</button>
+    </view>
+  </view>
+</view>

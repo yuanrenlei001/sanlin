@@ -1,0 +1,16 @@
+<!--pages/join/news.wxml-->
+<view class="container">
+  <view class="list">
+    <navigator wx:for="{{list}}" url="../join/newsdetail?id={{item.id}}">
+      <view class="listText">
+        <view class="listTitle">{{item.title}}</view>
+        <view class="listTime">{{item.entryTime}}</view>
+        <view class="listSee"><image src="/img/join/icon_see.png"></image> {{item.pageViews==''?0:item.pageViews}}</view>
+      </view>
+      <view class="num" style="background-image:url(/img/join/icon_num.png)">{{index+1}}</view>
+    </navigator>
+  </view>
+  <view class="more" wx:if="{{next==5}}" bindtap="more">点击加载更多</view>
+  <import src="../template/template.wxml"/>
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+</view>

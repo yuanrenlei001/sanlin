@@ -1,0 +1,40 @@
+{
+  "pages": [
+    
+      "pages/trend/detail",
+   "pages/index/index",
+  
+   
+    
+   
+    "pages/food/food",
+    "pages/food/detail",
+    "pages/scenery/scenery",
+    "pages/scenery/detail",
+    "pages/homestay/homestay",
+    "pages/homestay/detail",
+    "pages/trend/trend",
+    
+    "pages/scenery/map",
+    
+    "pages/join/news",
+    "pages/join/join",
+    "pages/join/newsdetail",
+    "pages/join/honor",
+    "pages/join/detail",
+    "pages/user/code",
+    "pages/user/infomation",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/null/null",
+    "pages/car/car",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

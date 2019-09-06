@@ -1,0 +1,55 @@
+.bg {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 99;
+}
+.bgImg {
+  width:100%;
+  height:100%;
+  animation: imgs 2s linear  ;
+}
+@keyframes imgs{
+    0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes left{
+    0% {
+    left: -300rpx;
+  }
+  
+  100% {
+    left: 44rpx;
+  }
+}
+@keyframes right{
+    0% {
+    right: -300rpx;
+  }
+  
+  100% {
+    right: 44rpx;
+  }
+}
+.sort {
+  width:100%;
+  height:265rpx;
+  position: absolute;
+  bottom:200rpx;
+}
+.sort navigator {
+  width:303rpx;
+  height:103rpx;
+  position: absolute;
+}
+.sort navigator image {
+  width:303rpx;
+  height:103rpx;
+}

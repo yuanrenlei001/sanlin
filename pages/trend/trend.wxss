@@ -1,0 +1,100 @@
+/* pages/trend/trend.wxss */
+page {background: #f2f2f2;}
+.banner {
+  width: 100%;
+  height: 367rpx;
+  position: relative;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15rpx;
+  height: 71rpx;
+  line-height: 71rpx;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.tab {
+  width: 100%;
+ 
+  /* margin: 60rpx auto; */
+}
+
+.tab .btns {
+  display: flex;
+   height: 84rpx;
+  border-bottom: 1rpx solid #ccc;
+  text-align: center;
+  line-height: 84rpx;
+  font-size: 30rpx;
+  color: #525252;
+}
+
+.tab .btns view {
+  flex: 1;
+  text-align: center;
+}
+
+.tab .btns .cur {
+  color: #428503;
+  /* border-bottom: 3rpx solid #428503; */
+}
+
+.cons {
+  width:100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.list {
+  border-bottom: 1px solid #e6e6e6;
+  height:132rpx;
+  width:100%;
+  position: relative;
+  padding: 25rpx 0;
+}
+.list image {
+  width:188rpx;
+  height:132rpx;
+  float:left;
+  border-radius: 10rpx;
+}
+.detail {
+  margin-left: 240rpx;
+  height:132rpx;
+  position: relative;
+}
+.detail view {
+  font-size: 32rpx;
+  color: #262626;
+  text-align: justify;
+  display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.detail text {
+  font-size: 22rpx;
+  color: #949494;
+  position: absolute;
+  left:0;
+  bottom:0;
+}

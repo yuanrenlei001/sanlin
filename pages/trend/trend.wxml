@@ -1,0 +1,27 @@
+<!--pages/trend/trend.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="/img/index/banner.png"></image>
+    <view class="text">丝绸小镇党群服务中心服务菜单</view>
+  </view>
+
+  <!--index.wxml-->
+  <view class="tab">
+    <view class="btns">
+      <view wx:for="{{btns}}" class="{{index==active?'cur':''}}" data-index="{{index}}" bindtap="toggle">{{item}}</view>
+    </view>
+    <progress percent="{{progress}}"  color="red" active-mode="backwards" stroke-width="2" activeColor="#5cb00c" backgroundColor="#ccc" />
+    <view class="cons">
+      <navigator url="../trend/detail" class="list">
+          <image src="/img/index/banner.png"></image>
+          <view class="detail">
+            <view>丝绸小镇党群服务中心服务菜单中心服务菜单</view>
+            <text>2019-08-19</text>
+          </view>
+      </navigator>
+    </view>
+  </view>
+
+  <import src="../template/template.wxml" />
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

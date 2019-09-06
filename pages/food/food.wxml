@@ -1,0 +1,29 @@
+<!--pages/food/food.wxml-->
+<view class="container" style="padding:0 35rpx;box-sizing: border-box;">
+  <view class="search">
+    <input placeholder="搜索"/>
+  </view>
+  <view class="title"><image src="/img/food/title.png"></image></view>
+<!-- 美食列表 -->
+  <view class="foodList">
+    <navigator url="../food/detail">
+      <image src="/img/index/banner.png"></image>
+      <view class="food">
+        <text class="food01">鹤莱山庄</text>
+        <text class="food02" style="background-image:url('/img/food/phone.png')">15715456464</text>
+        <text class="food03">杭州德清三林村黄郛东路58-2号</text>
+      </view>
+    </navigator>
+    <navigator url="../food/detail">
+      <image src="/img/index/banner.png"></image>
+      <view class="food">
+        <text class="food01">鹤莱山庄</text>
+        <text class="food02" style="background-image:url('/img/food/phone.png')">15715456464</text>
+        <text class="food03">杭州德清三林村黄郛东路58-2号</text>
+      </view>
+    </navigator>
+  </view>
+<!-- 美食列表 -->
+  <import src="../template/template.wxml" />
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

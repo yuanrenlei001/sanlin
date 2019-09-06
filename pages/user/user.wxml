@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="top" style="background-image:url(/img/user/top.jpg)">
+    <view class="user">
+      <image src="{{user.avatarUrl}}"></image>
+    </view>
+    <!-- <image class="renz" src="/img/user/renz.png"></image> -->
+    <view class="name">{{user.nickName}}</view>
+  </view>
+
+  <view class="phone">
+    <image class="icon01" src="/img/user/icon01.png"></image>
+    <view>登录手机号，成为
+      <image class="icon04" src="/img/user/icon04.png"></image>
+      <text> 三林荣誉村民</text>
+    </view>
+    <image class="right" src="/img/index/right.png"></image>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="btns"></button>
+  </view>
+
+  <view style="background:#fff;">
+    <view class="phone" bindtap="infomation">
+      <image class="icon01" src="/img/user/icon02.png"></image>
+      <view style="padding-left:0;margin-left:115rpx;">个人信息</view>
+      <image class="right" src="/img/index/right.png"></image>
+    </view>
+    <view class="phone" bindtap="code" style="margin-top:1px;border-top:transparent;">
+      <image class="icon01" src="/img/user/icon03.png"></image>
+      <view>一码通</view>
+      <image class="right" src="/img/index/right.png"></image>
+    </view>
+  </view>
+
+  <import src="../template/template.wxml" />
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

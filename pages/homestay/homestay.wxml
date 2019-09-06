@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="top">
+    <image src='/img/homestay/title.png'></image>
+  </view>
+  <swiper previous-margin='50px' next-margin='50px' bindchange="swiperChange" style='height:{{swiperH}};'>
+    <swiper-item wx:for='{{imgList}}' wx:key=''>
+      <navigator url="../homestay/detail">
+        <image class='le-img {{nowIdx==index?"le-active":""}}' bindload='getHeight' src="{{item.img}}" style='height:{{swiperH}};'></image>
+        <view class='detail {{nowIdx==index?"le-active":""}}'>
+          <view class="name">{{item.name}}</view>
+          <view class="address" style="background-image:url(/img/homestay/address.png)">{{item.address}}</view>
+        </view>
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <view style="font-size:23rpx;color:#9d9d9d;width:100%;text-align:center; margin-top:50rpx;">更多优选房源等待您的入住</view>
+  <import src="../template/template.wxml" />
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

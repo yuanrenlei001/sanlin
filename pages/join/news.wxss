@@ -1,0 +1,72 @@
+/* pages/join/news.wxss */
+.tabBar  {padding: 10rpx 10rpx 0 10rpx;}
+.list {
+  width:100%;
+  padding: 0 32rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+navigator {
+  padding-top: 29rpx;
+  padding-bottom: 23rpx;
+  height:88rpx;
+  width:100%;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  position: relative;
+}
+.more {
+  width:100%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #c3c3c3;
+  margin: 26rpx 0;
+}
+.listText {
+  height:100%;
+  padding-left: 50rpx;
+  position: relative;
+}
+.listTitle {
+  font-size: 30rpx;
+  color: #474952;
+  white-space:nowrap; 
+text-overflow:ellipsis; 
+-o-text-overflow:ellipsis; 
+overflow: hidden;
+position: absolute;
+top:0;
+left:50rpx;
+}
+.listTime {
+  color: #b4b4b4;
+  font-size: 24rpx;
+  position: absolute;
+  bottom:0;
+  left:50rpx;
+}
+.listSee {
+  position: absolute;
+  bottom:0;
+  right:0;
+  color: #b4b4b4;
+  font-size: 24rpx;
+}
+.listSee image {
+  width:36rpx;
+  height:23rpx;
+  margin-right: 5rpx;
+}
+.num {
+  width:36rpx;
+  height:37rpx;
+  position: absolute;
+  top:37rpx;
+  left:0;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 37rpx;
+  background-repeat: no-repeat;
+  background-size: 36rpx 37rpx;
+}

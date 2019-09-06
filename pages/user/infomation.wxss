@@ -1,0 +1,43 @@
+/* pages/user/infomation.wxss */
+.main {
+  width:100%;
+  box-sizing: border-box;
+  padding-left: 35rpx;
+  border-bottom: 1px solid #d8d8d8;
+}
+.list {
+  width:100%;
+  border-bottom: 1px solid #d8d8d8;
+  height:110rpx;
+  line-height: 110rpx;
+  position: relative;
+}
+.list:last-child {
+  border-bottom: transparent;
+}
+.list.head {
+  height:160rpx;
+  line-height: 160rpx;
+}
+.list text {
+  float:left;
+  font-size: 32rpx;
+  color: #353535;
+}
+.right {
+  position: absolute;
+  top:50%;
+  right:35rpx;
+  width:21rpx;
+  height:31rpx;
+  margin-top: -15.5rpx;
+}
+.userImg {
+  width:126rpx;
+  height:126rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  margin-top: -63rpx;
+  right:80rpx;
+}

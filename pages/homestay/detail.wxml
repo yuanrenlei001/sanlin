@@ -1,0 +1,102 @@
+<!--pages/homestay/detail.wxml-->
+<view class="container">
+  <!-- lunbo -->
+  <view class="banner">
+    <swiper indicator-dots="true" autoplay="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,1)" style="height:500rpx;">
+      <swiper-item>
+        <image src="/img/index/banner.png" class="slide-image" />
+      </swiper-item>
+      <swiper-item>
+        <image src="/img/index/banner.png" class="slide-image" />
+      </swiper-item>
+      <swiper-item>
+        <image src="/img/index/banner.png" class="slide-image" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- lunbo -->
+  <!-- 民宿地址信息 -->
+  <view class="infomation">
+    <view class="texts">
+      三林万鸟园
+      <image class="Imgs" src="/img/homestay/icon_wz.png"></image>
+      <image class="Imgs" src="/img/homestay/icon_jp.png"></image>
+    </view>
+    <view class="detail">
+      <view class="detailTop">
+        <view class="map" style="background-image:url('/img/scenery/address.png')">杭州市莫干山镇黄郛东路58-2号</view>
+        <view class="phone" bindtap="phoneShow" style="background-image:url('/img/scenery/phone.png')">18329199210</view>
+      </view>
+      <view class="detailBottom">
+        <text>WIFI</text>
+        <text>儿童乐园</text>
+        <text>WIFI</text>
+        <text>儿童乐园</text>
+        <text>WIFI</text>
+        <text>WIFI</text>
+      </view>
+    </view>
+  </view>
+  <!-- 民宿地址信息 -->
+  <!-- 民宿介绍 -->
+  <view class="introduction">
+    <view class="text">景点介绍</view>
+    <view class="content">
+      <rich-text nodes="{{nodes}}"></rich-text>
+    </view>
+  </view>
+  <!-- 民宿介绍 -->
+  <!-- 基本信息 -->
+  <view class="introduction">
+    <view class="text">基本信息</view>
+    <view class="homestayDetail">
+      <view class="homestayDetail01" style="background-image:url(/img/homestay/icon_xx.png)">民宿特色：</view>
+      <view class="homestayDetail02">适合安静、休息、徒步、亲子游</view>
+      <view class="homestayDetail01" style="background-image:url(/img/homestay/icon_xx.png)">设施介绍：</view>
+      <view class="homestayDetail02">WIFI、露台、花园、山景、公共休息区、自助厨房</view>
+    </view>
+    <view class="homestayRoom">
+      <view class="homestayDetail01" style="background-image:url(/img/homestay/icon_xx.png);margin-left:46rpx;">房间信息：</view>
+      <view class="roomList">
+        <image src='/img/index/banner.png'></image>
+        <view class="listText">
+          <view class="listText01">大床房</view>
+          <view class="listText02">
+            <text>25-30m²</text>
+            <text>大床</text>
+            <text>2-3层</text>
+          </view>
+          <view class="listText03">浴室、吹风机、沙发</view>
+        </view>
+        <view class="money"><text style="font-size:28rpx;">￥</text>680</view>
+      </view>
+      <view class="roomList">
+        <image src='/img/index/banner.png'></image>
+        <view class="listText">
+          <view class="listText01">大床房</view>
+          <view class="listText02">
+            <text>25-30m²</text>
+            <text>大床</text>
+            <text>2-3层</text>
+          </view>
+          <view class="listText03">浴室、吹风机、沙发</view>
+        </view>
+        <view class="money"><text style="font-size:28rpx;">￥</text>680</view>
+      </view>
+      <view class="roomList">
+        <image src='/img/index/banner.png'></image>
+        <view class="listText">
+          <view class="listText01">大床房</view>
+          <view class="listText02">
+            <text>25-30m²</text>
+            <text>大床</text>
+            <text>2-3层</text>
+          </view>
+          <view class="listText03">浴室、吹风机、沙发</view>
+        </view>
+        <view class="money"><text style="font-size:28rpx;">￥</text>680</view>
+      </view>
+    </view>
+  </view>
+  <!-- 基本信息 -->
+</view>

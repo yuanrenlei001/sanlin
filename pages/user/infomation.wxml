@@ -1,0 +1,25 @@
+<!--pages/user/infomation.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="head list">
+      <text>头像</text>
+      <image class="userImg" src='/img/index/banner.png'></image>
+      <image class="right" src='/img/index/right.png'></image>
+    </view>
+    <view class="list">
+      <text>姓名</text>
+      <text style="float:right;margin-right:80rpx;">{{user.nickName}}</text>
+      <image class="right" src='/img/index/right.png'></image>
+    </view>
+    <!-- <view class="list">
+      <text>手机号</text>
+      <text style="float:right;margin-right:80rpx;">12312</text>
+      <image class="right" src='/img/index/right.png'></image>
+    </view> -->
+    <view class="list">
+      <text>性别</text>
+      <text style="float:right;margin-right:80rpx;">{{user.gender==1?'男':'女'}}</text>
+      <image class="right" src='/img/index/right.png'></image>
+    </view>   
+  </view>
+</view>

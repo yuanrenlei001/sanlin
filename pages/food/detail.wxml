@@ -1,0 +1,48 @@
+<!--pages/scenery/detail.wxml-->
+<view class="container">
+  <view class="top"><image src='/img/join/sl_icon_02.jpg'></image></view>
+  <view class="infomation">
+    <text>三林万鸟园</text>
+    <view class="detail">
+      <view class="detailTop">
+        <view class="map" style="background-image:url('/img/scenery/address.png')">杭州市莫干山镇黄郛东路58-2号</view>
+        <view class="phone" bindtap="phoneShow" style="background-image:url('/img/scenery/phone.png')">18329199210</view>
+      </view>
+      <!-- <view class="detailBottom">
+        <view class="detailFloat">
+          <view>开门时间</view>
+          <view style="color:#539617;">8:00 - 17:00</view>
+        </view>
+        <view class="detailFloat">
+          <view>门票价格</view>
+          <view style="color:#ff4e00;">50<text style="color:#8d8e91;">元</text></view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+  <!-- 景点介绍 -->
+    <view class="introduction">
+      <view class="text">景点介绍</view>
+       <view class="content">
+          <rich-text nodes="{{nodes}}"></rich-text>
+        </view>
+    </view>
+
+    <!-- 电话 -->
+    <view class="fixed hide">
+      <view class="tel">
+        <view class="telTop">温馨提示</view>
+        <view class="telMain">
+          <image src='/img/scenery/tel.png'></image>
+          <view class="telText">
+            <text>您确定要拨打这个电话吗？</text>
+            <text>18329199210</text>
+          </view>
+        </view>
+        <view class="telBottom">
+          <view class="success">确定</view>
+          <view class="cel">取消</view>
+        </view>
+      </view>
+    </view>
+</view>
